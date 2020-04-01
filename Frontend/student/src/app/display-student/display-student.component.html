@@ -1,0 +1,30 @@
+<div>
+  <h1 style="float: left;"> Student Details</h1>
+  <button type="submit" class="btn btn-warning mt-1" (click)="redirect()" style="float: right;">Add Student</button>
+</div>
+<table class="table table-bordered">
+  <tr>
+    <th>
+      ID
+    </th>
+    <th>
+      Name
+    </th>
+    <th>
+      City
+    </th>
+    <th>
+      Password
+    </th>
+    <th>
+      Otptional Pswd
+    </th>
+  </tr>
+  <tr *ngFor="let stud of studs">
+    <td>{{stud._id}}</td>
+    <td>{{stud.name}}</td>
+    <td>{{stud.city}}</td>
+    <td>{{stud.password}}</td>
+    <td>{{stud.pswd}}</td>
+  </tr>
+</table>
